@@ -1,0 +1,166 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.bg-main {
+    background: linear-gradient(135deg, #000000 0%, #330000 50%, #660000 100%);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.arcade-title {
+    font-size: 3rem;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.highlight {
+    color: #ff1a1a;
+}
+
+.game-button {
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.red {
+    background-color: #cc0000;
+    color: white;
+}
+.red:hover {
+    background-color: #ff1a1a;
+}
+
+.retro-font {
+    font-family: 'Press Start 2P', cursive;
+}
+
+hr {
+    width: 500px;
+}
+
+#board {
+    width: 400px;
+    height: 400px;
+
+    background-color: #cdc1b5;
+    border: 6px solid #bbada0;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #bbada0;
+
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* colored tiles */
+
+.x3 {
+    background-color: #eee4da;
+    color: #727371;
+}
+
+.x6 {
+    background-color: #ece0ca;
+    color: #727371;
+}
+
+.x12 {
+    background-color: #f4b17a;
+    color: white;
+}
+
+.x24 {
+    background-color: #f59575;
+    color: white;
+}
+
+.x48{
+    background-color: #f57c5f;
+    color: white;
+}
+
+.x96{
+    background-color: #f65d3b;
+    color: white;
+}
+
+.x192{
+    background-color: #edce71;
+    color: white;
+}
+
+.x384{
+    background-color: #edcc63;
+    color: white;
+}
+
+.x768{
+    background-color: #edc651;
+    color: white;
+}
+
+.x1536{
+    background-color: #eec744;
+    color: white;
+}
+
+.x3072{
+    background-color: #ecc230;
+    color: white;
+}
+
+.x6144 {
+    background-color: #fe3d3d;
+    color: white;
+}
+
+.x12288 {
+    background-color: #45ff20;
+    color: white;
+}
+.x24576 {
+    background-color: #45ff20;
+    color: white;
+}
+.x49152 {
+    background-color: #ff20a2;
+    color: white;
+}
+.x98304 {
+    background-color: #ff20a2;
+    color: white;
+}
+.x196608 {
+    background-color: #ff2020;
+    color: white;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff1a1a, 0 0 20px #ff1a1a;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #ff4d4d, 0 0 25px #ff4d4d;
+    }
+}

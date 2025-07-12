@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Flappy Bird</title>
+        <link rel="stylesheet" href="ArcadeFlappybird.css">
+        <script src="ArcadeFlappybird.js"></script>
+    </head>
+	<body class=" bg-main">     
+		<h1 id="arcadeTitle" class="retro-font arcade-title" style="padding-right: 20%;">
+                       Fla<span class="highlight">pp</span>yB<span class="highlight">ir</span>d
+        </h1>
+         <div style="display: flex; ">
+        <!-- Left-side buttons -->		
+        <div style="margin-right: 20px; display: flex; flex-direction: column; gap: 10px;">
+            <button class="game-button red" onclick="location.reload()">Restart <i class="fas fa-play ml-2"></i></button>			
+            <button class="game-button red" onclick="history.back()" >Back <i class="fas fa-play ml-2"></i></button>
+        </div>
+
+        <!-- Game content -->
+        <div style="flex-grow: 1; padding-right: 30%;">
+            <canvas id="board"></canvas>
+        </div>
+    </div>        
+    </body>
+</html>

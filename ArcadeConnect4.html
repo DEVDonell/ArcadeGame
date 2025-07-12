@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Donell Fakude
+ Arcade Game Connect4
+ File name: ArcadeConnect4.html-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="ArcadeConnect4.css">
+    <script src="ArcadeConnect4.js"></script>
+</head>
+<body class=" bg-main retro-font">
+
+ <div style="display: flex;">
+        <!-- Left-side buttons -->
+        <div style="margin-right: 20px; display: flex; flex-direction: column; gap: 10px;">
+            <button class="game-button red" onclick="enableCPU()">Play vs CPU <i class="fas fa-play ml-2"></i></button>
+            <button class="game-button red" onclick="location.reload()">Restart <i class="fas fa-play ml-2"></i></button>
+			<button class="game-button red" onclick="history.back()" >Back <i class="fas fa-play ml-2"></i></button>
+        </div>
+
+        <!-- Game content -->
+        <div style="flex-grow: 1; padding-right: 20%;">
+            <h1 id="arcadeTitle" class="retro-font arcade-title">
+                Co<span class="highlight">nn</span>ec<span class="highlight">t</span> 4
+            </h1>
+            <h2 id="winner" class="highlight"></h2>
+            <div id="board"></div>
+        </div>
+    </div>
+
+</body>
+</html>
